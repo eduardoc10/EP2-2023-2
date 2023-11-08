@@ -19,3 +19,4 @@ while True:
 print(lista_jogo)
 print('Comandos: desisto') ##########################
 
+print("a")
