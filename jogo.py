@@ -49,3 +49,5 @@ def print_word_not_found(word):
 def print_goodbye_message():
     obrigado = COR_VERDE + 'Muito obrigado por ter jogado! Até a próxima! :D' + COR_RESET
     print('\n'+ '{0}'.format(obrigado))
+
+    
