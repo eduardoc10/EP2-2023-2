@@ -1,6 +1,6 @@
 # EP2-2023-2
 
-#Anderson Julião e Eduardo Candeias:
+#Antonio Anderson de Araújo Julião e Eduardo Candeias:
 
 # Termo 2.0: 
 # Nesse jogo o player tem como objetivo acertar uma palavra que será randomicamente escolhida pelo codigo. Primeiramente ele informa quantas letras tem a palavra que será randomicamente selecionada pelo game, então o player ter o numero de letras da palavra (N) --> N+1 numero de chances de acertar a palavra. 
