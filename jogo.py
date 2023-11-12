@@ -27,4 +27,13 @@ def print_invalid_word(qtde_letras):
     quantidade_letras = COR_VERMELHA + str(qtde_letras) + COR_RESET
     print('\n'+"Palavra Inválida. Tente uma palavra de "+'{0}'.format(quantidade_letras)+" letras")
 
+def print_word_not_tried():
+    print('\n'+ "Você já tentou essa palavra. Tente uma nova!"+'\n')
 
+def print_word_not_found(word):
+    word = COR_VERMELHA + word + COR_RESET
+    print('\n'+"Uma pena você ter desistido... A palavra era: {}".format(word))
+
+def print_goodbye_message():
+    obrigado = COR_VERDE + 'Muito obrigado por ter jogado! Até a próxima! :D' + COR_RESET
+    print('\n'+ '{0}'.format(obrigado))
