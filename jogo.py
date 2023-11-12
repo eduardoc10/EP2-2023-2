@@ -11,6 +11,15 @@ COR_VERDE = '\033[92m'
 print((' '+("="*27))+"\n"+("|" + (' ')*27 +'|')+"\n"+("|" + " Bem-vindo ao Insper Termo "+"|")+"\n"+("|" + (' ')*27 +'|')+"\n"+(' '+("="*3)+(" Design de Software ") +("="*3)))
 print('\n'+'Comandos: Para sair do jogo digite "desisto"'+'\n')
 
+while True:
+    qtde = int(input("Digite a Quantidade de letras que você deseja jogar: "))
+    print('\n'+"Carregando... Por favor, aguarde!")
+    lista_jogo = funcoes.filtra(palavras.PALAVRAS,qtde)
+    if lista_jogo == []:
+        print("Quantidade Inválida! Tente uma quantidade de letras menor ou igual a 23!" + '\n')
+    else: 
+        break
+
 tentativas = COR_VERMELHA + str(qtde+1) + COR_RESET
 qtde_letras = COR_VERMELHA + str(qtde) + COR_RESET
 azul = COR_AZUL + 'Azul' + COR_RESET
