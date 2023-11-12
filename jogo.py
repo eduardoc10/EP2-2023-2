@@ -20,3 +20,11 @@ def print_rules(qtde_letras, tentativas, azul, amarelo, cinza):
     print(' * {0}: a palavra não tem a letra.'.format(cinza))
     print('- Os acentos são ignorados;'+'\n'+ '- As palavras podem possuir letras repetidas.' + '\n')
 
+def print_congratulations(parabens):
+    print('\n'+'{0}'.format(parabens))
+
+def print_invalid_word(qtde_letras):
+    quantidade_letras = COR_VERMELHA + str(qtde_letras) + COR_RESET
+    print('\n'+"Palavra Inválida. Tente uma palavra de "+'{0}'.format(quantidade_letras)+" letras")
+
+
