@@ -78,6 +78,14 @@ while i>0:
                 print((' '+'---')*len(palavra_especulada))
             i-=1
 
+    elif palavra_especulada == 'desisto':
+        desistir = input('\n'+'Tem certeza que deseja desistir da rodada? [s/n] ')
+        if desistir == 's':
+            quit = 's'
+            break
+    else:
+        print('\n'+ "Você já tentou essa palavra. Tente uma nova!"+'\n')
+
     if quit == 's':
         word = COR_VERMELHA + palavra_sorteada + COR_RESET
         print('\n'+"Uma pena você ter desistido... A palavra era: {}".format(word))
