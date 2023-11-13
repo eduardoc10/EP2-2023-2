@@ -78,15 +78,14 @@ while i>0:
                 print((' '+'---')*len(palavra_especulada))
             i-=1
 
-def print_word_not_tried():
-    print('\n'+ "Você já tentou essa palavra. Tente uma nova!"+'\n')
-
-def print_word_not_found(word):
-    word = COR_VERMELHA + word + COR_RESET
-    print('\n'+"Uma pena você ter desistido... A palavra era: {}".format(word))
-
-def print_goodbye_message():
-    obrigado = COR_VERDE + 'Muito obrigado por ter jogado! Até a próxima! :D' + COR_RESET
-    print('\n'+ '{0}'.format(obrigado))
-
+    if quit == 's':
+        word = COR_VERMELHA + palavra_sorteada + COR_RESET
+        print('\n'+"Uma pena você ter desistido... A palavra era: {}".format(word))
     
+    again = input('\n'+'Deseja jogar novamente? [s/n] ')
+    if again == 'n':
+        obrigado = COR_VERDE + 'Muito obrigado por ter jogado! Até a próxima! :D' + COR_RESET
+        print('\n'+ '{0}'.format(obrigado))
+        break
+    elif again != 's':
+        print('\n'+"Digite um comando válido!")  
