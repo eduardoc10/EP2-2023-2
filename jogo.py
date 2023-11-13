@@ -85,10 +85,14 @@ while True:
                 break
         else:
             print('\n'+ "Você já tentou essa palavra. Tente uma nova!"+'\n')
-
+    
+    word = COR_VERMELHA + palavra_sorteada + COR_RESET
+    
+    if i == 0:
+        print('\n'+"Que pena... Não foi dessa vez! A palavra era: {0}".format(word) +'\n'+"Lembre-se! A pratica leva a perfeição!!")  
+    
     if quit == 's':
-        word = COR_VERMELHA + palavra_sorteada + COR_RESET
-        print('\n'+"Uma pena você ter desistido... A palavra era: {}".format(word))
+        print('\n'+"Uma pena você ter desistido... A palavra era: {0}".format(word))
     
     again = input('\n'+'Deseja jogar novamente? [s/n] ')
     if again == 'n':
